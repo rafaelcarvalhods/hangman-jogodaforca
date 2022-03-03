@@ -1,36 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Smooch+Sans:wght@100;300;500&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body {
+body{
     width: 100vw;
-    height:90vh;
+    height: 90vh;
     margin-top: 10px;
-    background-color: rgba(180, 215, 238, 0.76);
+    background-color: rgb(122, 198, 211);
     font-family: 'Ubuntu', sans-serif;
 }
 
-.container {
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-
 }
 
-#imagem {
-    background-image: url(../images/Forca.png);
-    width: 667px;
-    height: 374px;
+#imagem{
+    background-image: url("../images/Forca.png");
+    width: 230px;
+    height: 230px;
     background-repeat: no-repeat;
-
 }
-
-#palavra-secreta {
+#palavra-secreta{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -39,61 +36,63 @@ body {
     margin-top: 30px;
 }
 
-.letras {
+.letras{
     width: 16px;
     text-align: center;
-    border-bottom: 1px solid gray;
-    color: white;
+    border-bottom: 2px solid #4d4a4dea;
+    color: #ffffff;
     padding: 2px;
     margin-left: 2px;
     margin-right: 2px;
 }
 
-#teclado {
+#teclado{
     margin-top: 30px;
 }
 
-.teclas button {
-    width:24px;
+.teclas button{
+    width: 24px;
     height: 24px;
     margin: 2px;
     margin-bottom: 5px;
     cursor: pointer;
-    box-shadow: 0px 2px 8px dimgray;
+    box-shadow:  0px 2px 8px dimgray;
     border-radius: 5px;
-    border: 1px solid dimgray;
-    color:green;
-    font-weight: 900;
+    border: 1px solid dimgrey;  
+    color: #2f9970;
     font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
 }
 
 .teclas button:disabled{
     cursor: not-allowed;
 }
 
-.teclas button:hover {
-    transform: scale(1.5);
+.teclas button:hover{
+    transform:scale(1.2);
 }
 
-#categoria {
+#categoria{
     margin-top: 30px;
-    color:green;
-    font-size:1.2em;
+    border: 1px solid dimgray;
+    border-radius: 5px;
+    padding: 5px;
+    color: #078554;
+    font-size: 1.2em;
 }
 
-@media (min-width: 321px) {
-    .teclas button {
-        width:25px;
+@media (min-width: 321px){
+    .teclas button{
+        width: 25px;
         height: 25px;
     }
     #categoria{
-        font-size: 1.3rem;
+        font-size: 1.3em;
     }
-
 }
 
-@media (min-width: 376px) {
-    .teclas button {
+@media (min-width: 376px){
+    .teclas button{
         width: 30px;
         height: 30px;
     }
@@ -103,13 +102,14 @@ body {
     .letras{
         width: 18px;
     }
+
     #categoria{
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
 }
 
-@media (min-width: 426px) {
-    .teclas button {
+@media (min-width: 426px){
+    .teclas button{
         width: 36px;
         height: 36px;
     }
@@ -119,16 +119,17 @@ body {
     .letras{
         width: 20px;
     }
+
     #categoria{
-        font-size: 1.6rem;
+        font-size: 1.6em;
     }
 }
 
-@media (min-width: 769px) {
-    .teclas button {
+@media (min-width: 769px){
+    .teclas button{
         width: 68px;
         height: 68px;
-        font-size: em;
+        font-size: 2em;
     }
     #palavra-secreta{
         font-size: 2.5em;
@@ -136,9 +137,8 @@ body {
     .letras{
         width: 35px;
     }
+
     #categoria{
         font-size: 2em;
     }
 }
-
-    
