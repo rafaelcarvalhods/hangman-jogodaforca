@@ -248,7 +248,7 @@ function verificaLetraEscolhida(letra){
 }
 
 function mudarStyleLetra(tecla){
-    document.getElementById(tecla).style.background = "#C71585";
+    document.getElementById(tecla).style.background = "#979797";
     document.getElementById(tecla).style.color = "#ffffff";
 }
 
@@ -259,7 +259,7 @@ function comparalistas(letra){
         carregaImagemForca();
 
         if(tentativas == 0){
-            alert("OPS! Não foi dessa vez ... A palavra secreta era" + palavraSecretaSorteada);
+            alert("OPS! Não foi dessa vez ... A palavra secreta era " + palavraSecretaSorteada);
         }
     }
     else{
